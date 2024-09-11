@@ -1,0 +1,13 @@
+{
+  "name": "meu-projeto-multi-pacotes",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\" \"npm run start-voice-assistant\"",
+    "start-backend": "cd backend && npm start",
+    "start-frontend": "cd frontend/assistente-frontend && npm start",
+    "start-voice-assistant": "cd voice-assistant && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
